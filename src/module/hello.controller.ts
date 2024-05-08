@@ -1,4 +1,6 @@
 import { Controller,Get } from "@nestjs/common";
+import { ApiTags } from "@nestjs/swagger";
+@ApiTags('hello')
 @Controller()
 export class HelloController{
     @Get('/hello')
